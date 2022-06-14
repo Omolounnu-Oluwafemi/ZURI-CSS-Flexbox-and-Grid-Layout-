@@ -5,7 +5,40 @@
   /* Font-size: 15px; */
 }
 body {
+  margin-top: 10px;
   background-color: hsl(0, 0%, 95%);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  background-color: #caac16;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 26px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #15c6bb;
+}
+.navheading {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 0 20px;
+}
+.active {
+  background-color: #4f9ee8;
 }
 main {
   display: flex;
@@ -13,7 +46,7 @@ main {
   align-items: center;
   flex-direction: row;
   width: 70%;
-  height: 700px;
+  height: 600px;
   margin: auto;
   font-size: 15px;
 }
