@@ -2,14 +2,46 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   background-color: rgb(46, 32, 32);
-  display: flex;
+}
+main {
+  display: flex;  
   place-items: center;
   height: 700px;
 }
-main {
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  background-color: #caac16;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 26px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #15c6bb;
+}
+.navheading {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 0 20px;
+}
+.active {
+  background-color: #4f9ee8;
+}
+.container {
   display: grid;
   grid-template-areas:
     "a a a b"
@@ -24,7 +56,7 @@ main {
   margin: auto;
   height: 600px;
 }
-main div {
+.container div {
   padding: 10px;
   text-align: center;
 }
