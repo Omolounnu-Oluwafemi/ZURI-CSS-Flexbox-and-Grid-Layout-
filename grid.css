@@ -6,9 +6,9 @@ body {
   background-color: rgb(46, 32, 32);
 }
 main {
-  display: flex;  
+  display: flex;
   place-items: center;
-  height: 700px;
+  height: 650px;
 }
 ul {
   list-style-type: none;
